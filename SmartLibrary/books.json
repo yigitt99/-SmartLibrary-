@@ -1,0 +1,32 @@
+[
+    {
+        "baslik": "C++ ile Nesne Yönelimli Programlama",
+        "isbn": "978-605-09-4567-8",
+        "kitap_no": 1,
+        "yazar": "Bjarne Stroustrup"
+    },
+    {
+        "baslik": "Clean Code",
+        "isbn": "978-605-09-1234-5",
+        "kitap_no": 2,
+        "yazar": "Robert C. Martin"
+    },
+    {
+        "baslik": "Design Patterns",
+        "isbn": "978-605-09-7890-1",
+        "kitap_no": 3,
+        "yazar": "Erich Gamma"
+    },
+    {
+        "baslik": "Algoritmalar",
+        "isbn": "978-605-09-3456-2",
+        "kitap_no": 4,
+        "yazar": "Thomas H. Cormen"
+    },
+    {
+        "baslik": "The Pragmatic Programmer",
+        "isbn": "978-605-09-6789-3",
+        "kitap_no": 5,
+        "yazar": "Andrew Hunt"
+    }
+]

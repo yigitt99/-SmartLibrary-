@@ -1,0 +1,20 @@
+[
+    {
+        "ad": "admin",
+        "kullanici_no": 1,
+        "rol": "admin",
+        "sifre": "admin123"
+    },
+    {
+        "ad": "ahmet",
+        "kullanici_no": 2,
+        "rol": "user",
+        "sifre": "user123"
+    },
+    {
+        "ad": "halito",
+        "kullanici_no": 31,
+        "rol": "user",
+        "sifre": "3131"
+    }
+]
