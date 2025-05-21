@@ -55,8 +55,9 @@ vector<Kullanici> loadUsersFromJson(const string& filename) {
 
 void clear();
 void intro();
-void login();
+bool login(bool& isAdmin);
 bool isAdminLogin();
+void normalMenu(bool isAdmin);
 
 void intro() {
     cout << "\n\t##      ## ####### ##      ######  ###### ####  #### #######";
@@ -143,6 +144,39 @@ bool login(bool& isAdmin) {
 
     } while (true); // Doğru giriş yapılana kadar döngü devam eder
 }
+
+void normalMenu(bool isAdmin) {
+    int choice;
+    do
+    {
+        clear();
+
+        cout << "\n\n\n\tANA MENU";
+        cout << "\n\n\t1. Kitap Odunc Al";
+        cout << "\n\n\t2. ISBN DOGRULAMA";
+        cout << "\n\n\t3. IADE ISLEMLERI";
+
+        if (isAdmin) {
+            cout << "\n\n\t4. Admin Menusune Git";
+        }
+
+        cout << "\n\n\t(5) CIKIS";
+        cout << "\n\n\tLutfen 1 ile 4 arasinda bir sayi giriniz: ";
+        cin >> choice;
+
+        if (choice < 1 || choice > 5) {
+            cout << "\n\n\tGecersiz secim! Lutfen tekrar deneyin.\n";
+            cin.ignore();
+            cin.get();
+            continue;
+        }
+
+        switch (choice) {
+            
+        }
+    } while (choice != 5);
+    }
+
 int main()
 {
     intro();
@@ -150,4 +184,8 @@ int main()
 	bool isAdmin = false;
 
     login(isAdmin);
+
+	normalMenu(isAdmin);
+
+    return 0;
 }
